@@ -1,0 +1,124 @@
+body {
+    background-image: url("../images/bg.png");
+}
+
+#canvas {
+    background-image: url("../images/canvas.png");
+}
+
+.parent:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;  
+}
+
+.parent {
+    text-align: center;
+}
+
+.main { 
+    width: 500px;
+    height: 400px;
+    background-color: #e5e5e5;
+    border-bottom: 3px solid #d7d7d7;
+    border-right: 3px solid #d7d7d7;
+    border-top: 3px solid #f8f8f8;
+    border-left: 3px solid #f8f8f8;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.topbar {
+    height: 30px;
+    background-color: #c7c7c7;    
+}
+
+.block {
+    margin-top: 3px;
+    height: 364px;
+    background-color: #c7c7c7;    
+}
+
+.toolbar {
+    width: 60px;
+    height: 364px;
+    background-color: #e5e5e5; 
+    margin-right: 2px;   
+    float: left;
+}
+
+.field {
+    width: 438px;
+    height: 364px;
+    background-color: #e5e5e5; 
+    float: left;
+}
+
+#canvas {    
+    background-color: white;
+    margin-top: 22px;
+}
+
+.button {
+    width: auto;
+    height: auto;    
+    padding: 3px;
+    float: left;
+    background-color: #e5e5e5;
+    border-bottom: 3px solid #d7d7d7;
+    border-right: 3px solid #d7d7d7;
+    border-top: 3px solid #f8f8f8;
+    border-left: 3px solid #f8f8f8;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffcd98;
+    border-bottom: 3px solid #dfb78c;
+    border-right: 3px solid #dfb78c;
+    border-top: 3px solid #fee9d3;
+    border-left: 3px solid #fee9d3;
+}
+
+.button:active {
+    background-color: #c7c7c7;
+    border-bottom: 3px solid #f8f8f8;
+    border-right: 3px solid #f8f8f8;
+    border-top: 3px solid #c0bfbf;
+    border-left: 3px solid #c0bfbf;
+}
+
+.tool {
+    width: 24px;
+    height: 24px;
+    float: left;
+    background-color: #e5e5e5;
+    border-bottom: 3px solid #d7d7d7;
+    border-right: 3px solid #d7d7d7;
+    border-top: 3px solid #f8f8f8;
+    border-left: 3px solid #f8f8f8;
+    cursor: pointer;
+}
+
+.tool:active {
+    background-color: #c7c7c7;
+    border-bottom: 3px solid #f8f8f8;
+    border-right: 3px solid #f8f8f8;
+    border-top: 3px solid #c0bfbf;
+    border-left: 3px solid #c0bfbf;
+}
+
+#draw {
+    background-image: url("../images/icons.png");
+}
+
+#clear {
+    background-image: url("../images/icons.png");
+    background-position: 48px;
+}
+
+#swap {
+    background-image: url("../images/icons.png");
+    background-position: 24px;
+}
