@@ -1,1 +1,2 @@
 # easypixel
+pixel art editor
