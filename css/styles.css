@@ -122,3 +122,10 @@ body {
     background-image: url("../images/icons.png");
     background-position: 24px;
 }
+
+input[type="color"]{
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+}
