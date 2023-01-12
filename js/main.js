@@ -8,8 +8,6 @@ cfg.getColor(0);
 
 let color0 = document.getElementById('color0');
 let color1 = document.getElementById('color1');
-color0.style.background = cfg.getColor(0);
-color1.style.background = cfg.getColor(1);
 
 document.getElementById('save').addEventListener( "click" , function() { Tools.save(canvas, cfg)});
 document.getElementById('canvas').addEventListener( "click" , function(event) { Tools.brush(canvas, cfg, event)});
@@ -40,14 +38,10 @@ document.getElementById('new').addEventListener( "click" , function() {
     cfg = new Config(320, size, undefined, cfg.getColor(0), cfg.getColor(1));
 });
 
-color0.addEventListener( "click" , function() {
-    let newColor = prompt("Новый цвет (например '#000000')", cfg.getColor(0)) ?? cfg.getColor(0);
-    cfg.setColor(0, newColor);
-    color0.style.background = cfg.getColor(0);
+color0.addEventListener( "input" , function() {
+    cfg.setColor(0, this.value);
 });
 
-color1.addEventListener( "click" , function() {
-    let newColor = prompt("Новый цвет (например '#ffffff')", cfg.getColor(1)) ?? cfg.getColor(1);
-    cfg.setColor(1, newColor);
-    color1.style.background = cfg.getColor(1);
+color1.addEventListener( "input" , function() {
+    cfg.setColor(1, this.value);
 });
